@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is an ecommerce project">
+    <title>Ecommerce Project</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    
+    <!-- navbar starts here -->
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+        <ul class="nav-upper flex-space-around">
+            <li class="nav_list">
+                <a href="index.html" 
+                class="nav_link">Home</a>
+            </li>
+            <li class="nav_list">
+                <a href="register.html" 
+                class="nav_link">Register</a>
+            </li>
+            <li class="nav_list">
+                <a href="login.html" 
+                class="nav_link">Login</a>
+            </li>
+            <li class="nav_list">
+                <a href="index.html" 
+                class="nav_link">Logout</a>
+            </li>
+            <li class="nav_list">
+                <a href="contact.html" 
+                class="nav_link">Contact</a>
+            </li>
+            <li class="profile-icon">
+                <a href="profile.html" 
+                class="nav_link"><img src="./images/Profile.png" alt="profile icon"></a>
+            </li>
+        </ul>
+
+        <ul class="nav-lower flex-space-around">
+            <li class="nav_list">
+                <a href="/index.html"
+                class="nav_brand nav_link">Azad Express</a>
+            </li>
+            <li class="nav_list">
+                <a href="/cart.html"class="nav_link">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                    Cart 2 product - BDT 1,500 tk
+            </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- navbar ends here -->
+    <main>
+        <section class="contact-section">
+            <h2 class="section-title text-center">Contact Us</h2>
+            <div class="contact-container flex-center">
+                <form action="" class="form card">
+                    <div class="form-control flex-center">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required autocomplete="name" />
+                    </div>
+                    <div class="form-control flex-center">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required autocomplete="email" />
+                    </div>
+                    <div class="form-control flex-center">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    
+                    <div class="contact-address flex-space-around">
+                        <address>
+                            <h4>Address: </h4>
+                            <p>Basundhara, A-Block</p>
+                            <p>Dhaka,Bangladesh</p><br>
+                            <span>Call: </span>
+                            <a href="tel:+8801586455">+8801642443429</a>
+                        </address>
+                        <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58399.54184943994!2d90.41315515918265!3d23.819617249887653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c62fce7d991f%3A0xacfaf1ac8e944c05!2sBasundhara%20Residential%20Area%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1732339000195!5m2!1sen!2sbd" 
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="form-control flex-center">
+                        <button type="submit" class="btn contact-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
